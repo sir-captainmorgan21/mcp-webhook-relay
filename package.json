@@ -1,0 +1,36 @@
+{
+  "name": "mcp-webhook-relay",
+  "version": "1.0.0",
+  "description": "Local MCP server that POSTs to webhook URLs on behalf of sandboxed MCP clients (Claude Desktop, Cowork). Bridges outbound HTTPS to endpoints like Slack incoming webhooks when the client's network can't reach them directly.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sir-captainmorgan21/mcp-webhook-relay.git"
+  },
+  "homepage": "https://github.com/sir-captainmorgan21/mcp-webhook-relay#readme",
+  "bugs": "https://github.com/sir-captainmorgan21/mcp-webhook-relay/issues",
+  "license": "MIT",
+  "author": "sir-captainmorgan21",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "webhook",
+    "slack",
+    "claude",
+    "claude-desktop",
+    "cowork",
+    "relay",
+    "bridge"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  }
+}
